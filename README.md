@@ -34,11 +34,11 @@ El dominio jurídico se caracteriza por el uso de lenguaje altamente estructurad
 
 ## 2. Objetivos
 
-### 🔹 Objetivo General
+### Objetivo General
 
 Desarrollar un modelo generativo basado en GPT-2 capaz de producir texto jurídico en español mediante fine-tuning.
 
-### 🔹 Objetivos Específicos
+### Objetivos Específicos
 
 * Implementar un pipeline completo de NLP generativo
 * Adaptar GPT-2 al dominio jurídico
@@ -51,7 +51,7 @@ Desarrollar un modelo generativo basado en GPT-2 capaz de producir texto jurídi
 
 Se sigue un enfoque estructurado alineado con buenas prácticas en PLN:
 
-### 🔹 Fases del proceso
+### Fases del proceso
 
 ```mermaid id="f3z6e1"
 flowchart LR
@@ -88,12 +88,12 @@ F --> G[Evaluación]
 
 ## 5. Implementación Técnica
 
-### 🔹 Modelo utilizado
+### Modelo utilizado
 
 * GPT-2 (preentrenado)
 * Fine-tuning con dataset jurídico
 
-### 🔹 Librerías
+### Librerías
 
 * Transformers
 * PyTorch
@@ -103,7 +103,7 @@ F --> G[Evaluación]
 
 ## 6. Estrategias de Generación
 
-### 🔹 Método 1: Generación personalizada
+### Método 1: Generación personalizada
 
 Permite control detallado de:
 
@@ -111,7 +111,7 @@ Permite control detallado de:
 * Longitud
 * Probabilidad acumulada
 
-### 🔹 Método 2: Generación estándar
+### Método 2: Generación estándar
 
 ```python id="codigo-generacion"
 model.generate(
@@ -130,13 +130,13 @@ El uso de `top_k` y `top_p` permite balancear entre diversidad y coherencia del 
 
 ## 7. Resultados y Análisis
 
-### 🔹 Resultados observados
+### Resultados observados
 
 * Generación coherente en contexto jurídico
 * Uso adecuado de conectores legales
 * Estructura formal consistente
 
-### 🔹 Ejemplo generado
+### Ejemplo generado
 
 > “El contrato de arrendamiento establece que las partes deberán cumplir con las obligaciones pactadas conforme a la normatividad vigente...”
 
@@ -162,7 +162,6 @@ Sin embargo:
 
 * Dataset limitado
 * Evaluación solo cualitativa
-* No se mide perplexity ni BLEU
 * Riesgo de overfitting
 
 ---
@@ -176,9 +175,9 @@ Sin embargo:
 
 ---
 
-## 🔁 11. Reproducibilidad
+## 11. Reproducibilidad
 
-### 🔹 Instalación
+### Instalación
 
 ```bash
 pip install -r requirements.txt
@@ -209,8 +208,16 @@ Se recomienda GPU
 
 ---
 
-## 14. Conclusión
+## 14. Conclusiones
 
-Este proyecto demuestra que los modelos generativos pueden ser adaptados a dominios especializados como el jurídico, evidenciando el potencial de la IA generativa en contextos profesionales.
-o dime: **“vamos a sustentación”**
+El modelo GPT-2 base genera texto coherente desde el punto de vista lingüístico, pero carece de especialización en el dominio jurídico, produciendo contenido generalista.
 
+Tras el proceso de fine-tuning con un corpus jurídico, el modelo logra incorporar terminología legal, mejorar la coherencia temática y adoptar estructuras propias del lenguaje normativo.
+
+La evaluación automática muestra un incremento en la presencia de términos jurídicos en el modelo ajustado, lo que evidencia su especialización.
+
+Sin embargo, la calidad del modelo depende del tamaño y limpieza del corpus, así como de los parámetros de generación utilizados.
+
+Este proyecto demuestra que los modelos generativos pueden adaptarse a dominios específicos, aunque no garantizan precisión legal ni reemplazan el análisis experto.
+
+Como trabajo futuro, se recomienda ampliar el dataset, usar modelos más avanzados y aplicar métricas cuantitativas adicionales.
