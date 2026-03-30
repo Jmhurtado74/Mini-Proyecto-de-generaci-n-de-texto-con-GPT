@@ -183,7 +183,7 @@ Sin embargo:
 pip install -r requirements.txt
 ```
 
-### 🔹 Ejecución
+### Ejecución
 
 * Abrir en Google Colab
 * Ejecutar todas las celdas
@@ -210,14 +210,14 @@ Se recomienda GPU
 
 ## 14. Conclusiones
 
-El modelo GPT-2 base genera texto coherente desde el punto de vista lingüístico, pero carece de especialización en el dominio jurídico, produciendo contenido generalista.
+* El modelo GPT-2 base genera texto coherente desde el punto de vista lingüístico, pero carece de especialización en el dominio jurídico, produciendo contenido generalista.
 
-Tras el proceso de fine-tuning con un corpus jurídico, el modelo logra incorporar terminología legal, mejorar la coherencia temática y adoptar estructuras propias del lenguaje normativo.
+* Tras el proceso de fine-tuning con un corpus jurídico, el modelo logra incorporar terminología legal, mejorar la coherencia temática y adoptar estructuras propias del lenguaje normativo.
 
-La evaluación automática muestra un incremento en la presencia de términos jurídicos en el modelo ajustado, lo que evidencia su especialización.
+* La evaluación automática muestra un incremento en la presencia de términos jurídicos en el modelo ajustado, lo que evidencia su especialización.
 
-Sin embargo, la calidad del modelo depende del tamaño y limpieza del corpus, así como de los parámetros de generación utilizados.
+* Sin embargo, la calidad del modelo depende del tamaño y limpieza del corpus, así como de los parámetros de generación utilizados.
 
-Este proyecto demuestra que los modelos generativos pueden adaptarse a dominios específicos, aunque no garantizan precisión legal ni reemplazan el análisis experto.
+* Este proyecto demuestra que los modelos generativos pueden adaptarse a dominios específicos, aunque no garantizan precisión legal ni reemplazan el análisis experto.
 
-Como trabajo futuro, se recomienda ampliar el dataset, usar modelos más avanzados y aplicar métricas cuantitativas adicionales.
+* Como trabajo futuro, se recomienda ampliar el dataset, usar modelos más avanzados y aplicar métricas cuantitativas adicionales.
